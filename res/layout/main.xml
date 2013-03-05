@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+    	 
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    	    		
+		<TextView
+	  	 android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/hello" />
+		    
+		<TextView
+		android:id="@+id/textView1"
+		android:text="Please click buttons below:"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dip"
+		android:layout_gravity="center"/>
+	
+		<Button
+		android:id="@+id/button1"
+		android:text="Check In"
+		android:layout_height="wrap_content"
+		android:layout_width="250dp"
+		android:layout_gravity="center"
+		android:onClick="checkIn"/>
+	
+		<Button
+		android:id="@+id/button2"
+		android:text="Check Out"
+		android:layout_height="wrap_content"
+		android:layout_width="250dp"
+		android:layout_gravity="center"
+		android:onClick="checkOut"/>
+	
+		<TextView
+		android:id="@+id/textOutput1"
+		android:text=""
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textColor="#2070ab"
+		android:typeface="monospace"/>
+		
+		<TextView
+		android:id="@+id/textOutput2"
+		android:text=""
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:typeface="monospace"/>
+		
+		<TextView
+		android:id="@+id/textOutput3"
+		android:text="\n"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:typeface="monospace"/>
+		
+		<TextView
+		android:id="@+id/textOutput4"
+		android:text="\n"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textColor="#2070ab"
+		android:typeface="monospace"/>
+		
+	</LinearLayout>
+		
+	<LinearLayout
+	android:orientation="horizontal"
+  	android:layout_height="wrap_content"
+  	android:layout_width="fill_parent"
+  	android:background="#2070ab"
+  	android:padding="5dip"
+  	android:gravity="center"
+  	android:layout_alignParentBottom="true">
+  	  	    	
+    	<Button
+     	android:id="@+id/button_SeeRecords"
+		android:text="See records"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center"
+		android:onClick="seeRecords" />
+			
+	</LinearLayout>
+
+</RelativeLayout>
+    		
